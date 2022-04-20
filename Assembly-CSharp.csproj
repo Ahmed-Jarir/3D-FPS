@@ -104,6 +104,7 @@
      <Compile Include="Assets\Scripts\Environment\Checkpoint.cs" />
      <Compile Include="Assets\Scripts\Utility\InputManager.cs" />
      <Compile Include="Assets\Scripts\UI\HighlightFix.cs" />
+     <Compile Include="Assets\Scripts\UI\Sensitivity.cs" />
      <Compile Include="Assets\Scripts\Controller\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Enemies\EnemySpawner.cs" />
      <Compile Include="Assets\Scripts\Controller\CameraController.cs" />

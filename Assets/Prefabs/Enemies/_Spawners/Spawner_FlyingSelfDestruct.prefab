@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7339759114649852581}
   - component: {fileID: 7339759114649852579}
   m_Layer: 0
-  m_Name: Spawner_AerialBomber
+  m_Name: Spawner_FlyingSelfDestruct
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -141,6 +141,12 @@ MonoBehaviour:
   deathEffect: {fileID: 1515603650488286217, guid: b1d61b018291e5043b0be5ee26c12b18, type: 3}
   hitEffect: {fileID: 1986892457192645033, guid: b4b5f92d032abe64b84d7639d84610e8, type: 3}
   ragdollHandler: {fileID: 0}
+  eventsOnDeath:
+    m_PersistentCalls:
+      m_Calls: []
+  eventsOnRespawn:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &7339759113931207485
 GameObject:
   m_ObjectHideFlags: 0
@@ -151,7 +157,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7339759113931207484}
   - component: {fileID: 7339759113931207487}
-  - component: {fileID: 3249946109077067123}
   m_Layer: 0
   m_Name: SpawnArea
   m_TagString: Untagged
@@ -186,23 +191,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 4292625075940306303, guid: 4186f78c80afc8f44b6f401d9821b731, type: 3}
-  spawnMethod: 0
-  spawnRate: 10
-  spawnAreaSize: {x: 2, y: 2, z: 2}
-  showSpawnArea: 1
---- !u!114 &3249946109077067123
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7339759113931207485}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1e1c3d0cbb6e1b41b092615eff9be45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefab: {fileID: 1515603650488286217, guid: b1d61b018291e5043b0be5ee26c12b18, type: 3}
   spawnMethod: 0
   spawnRate: 10
   spawnAreaSize: {x: 2, y: 2, z: 2}

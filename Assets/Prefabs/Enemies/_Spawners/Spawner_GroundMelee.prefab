@@ -141,6 +141,12 @@ MonoBehaviour:
   deathEffect: {fileID: 1515603650488286217, guid: b1d61b018291e5043b0be5ee26c12b18, type: 3}
   hitEffect: {fileID: 1986892457192645033, guid: b4b5f92d032abe64b84d7639d84610e8, type: 3}
   ragdollHandler: {fileID: 0}
+  eventsOnDeath:
+    m_PersistentCalls:
+      m_Calls: []
+  eventsOnRespawn:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &7159534747694736790
 GameObject:
   m_ObjectHideFlags: 0
@@ -151,7 +157,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7159534747694736791}
   - component: {fileID: 7159534747694736788}
-  - component: {fileID: 5534945574704686498}
   m_Layer: 0
   m_Name: SpawnArea
   m_TagString: Untagged
@@ -186,23 +191,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 3642792238051749167, guid: eca7e8b8e6d5b3744af942b805dcad7a, type: 3}
-  spawnMethod: 0
-  spawnRate: 10
-  spawnAreaSize: {x: 2, y: 2, z: 2}
-  showSpawnArea: 1
---- !u!114 &5534945574704686498
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7159534747694736790}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1e1c3d0cbb6e1b41b092615eff9be45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefab: {fileID: 1515603650488286217, guid: b1d61b018291e5043b0be5ee26c12b18, type: 3}
   spawnMethod: 0
   spawnRate: 10
   spawnAreaSize: {x: 2, y: 2, z: 2}
