@@ -284,4 +284,12 @@ public class Shooter : MonoBehaviour
             EquipGun(gunIndex);
         }
     }
+
+    public void MakeGunUnavailable(int gunIndex)
+    {
+        if (gunIndex < guns.Count && guns[gunIndex] != null && guns[gunIndex].available == true)
+        {
+            guns[gunIndex].available = false;
+        } 
+    }
 }

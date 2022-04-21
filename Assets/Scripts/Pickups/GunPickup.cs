@@ -9,8 +9,9 @@ public class GunPickup : Pickup
 {
     [Header("Gun Pickup Settings")]
     [Tooltip("The index of the gun to make available in the shooter script")]
+    
     public int gunIndexToMakeAvailable = 0;
-
+    
     /// <summary>
     /// Description:
     /// Adds a gun to the player's shooter component when picked up
@@ -23,7 +24,7 @@ public class GunPickup : Pickup
     public override void DoOnPickup(Collider collision)
     {
         Shooter shooter = collision.gameObject.GetComponentInChildren<Shooter>();
-        if (collision.tag == "Player" && shooter != null)
+        if (collision.tag == "Player" && shooter != null && !shooter.guns[gunIndexToMakeAvailable].upgraded)
         {
             shooter.MakeGunAvailable(gunIndexToMakeAvailable);
         }

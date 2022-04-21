@@ -52,6 +52,8 @@ public class Gun : MonoBehaviour
     [Tooltip("Whether or not this gun is available for use")]
     public bool available = false;
 
+    public bool upgraded = false;
+
     [Header("Animation Settings")]
     [Tooltip("The animator that animates this gun.")]
     public Animator gunAnimator = null;
