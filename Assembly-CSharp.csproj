@@ -91,6 +91,7 @@
      <Compile Include="Assets\Scripts\Utility\CursorManager.cs" />
      <Compile Include="Assets\Scripts\UI\UIelement\WeaponDisplay.cs" />
      <Compile Include="Assets\Scripts\Pickups\HealthPickup.cs" />
+     <Compile Include="Assets\Scripts\Environment\Teleporter.cs" />
      <Compile Include="Assets\Scripts\Enemies\GroundEnemy.cs" />
      <Compile Include="Assets\Scripts\UI\UIelement\UIelement.cs" />
      <Compile Include="Assets\Scripts\UI\UIelement\LivesDisplay.cs" />

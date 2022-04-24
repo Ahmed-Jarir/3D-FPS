@@ -32,7 +32,7 @@ public class GunUpgradePickup : Pickup
             shooter.MakeGunAvailable(gunIndexToMakeAvailable);
             shooter.MakeGunUnavailable(gunIndexToUpgradeFrom);
             shooter.guns[gunIndexToUpgradeFrom].upgraded = true;
+            base.DoOnPickup(collision);
         }
-        base.DoOnPickup(collision);
     }
 }

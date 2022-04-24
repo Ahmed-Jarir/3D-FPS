@@ -25,6 +25,8 @@ public class PlayerController : MonoBehaviour
     [Tooltip("the player shooter script that fires projectiles")]
     public Shooter playerShooter = null;
 
+    private bool disableController = false;
+
     public Health PlayerHealth;
     public List<GameObject> DisableItemsOnDeath;
 
@@ -34,6 +36,11 @@ public class PlayerController : MonoBehaviour
 
     private CharacterController controller;
     private InputManager inputManager;
+
+    public void toggleController()
+    {
+        disableController = !disableController;
+    }
     /// <summary>
     /// Description:
     /// Standard Unity function called once before the first Update call
@@ -72,23 +79,25 @@ public class PlayerController : MonoBehaviour
     /// </summary>
     void Update()
     {
-        if (PlayerHealth.currentHealth <= 0)
-        {
-            foreach(GameObject item in DisableItemsOnDeath)
+        if(!disableController){
+            if (PlayerHealth.currentHealth <= 0)
             {
-               item.SetActive(false); 
+                foreach(GameObject item in DisableItemsOnDeath)
+                {
+                   item.SetActive(false); 
+                }
+                return;
             }
-            return;
-        }
-        else
-        {
-            foreach(GameObject item in DisableItemsOnDeath)
+            else
             {
-               item.SetActive(true); 
+                foreach(GameObject item in DisableItemsOnDeath)
+                {
+                   item.SetActive(true); 
+                }
             }
+            ProcessMovement();
+            ProcessRotation();
         }
-        ProcessMovement();
-        ProcessRotation();
     }
 
     private Vector3 moveDirection;
