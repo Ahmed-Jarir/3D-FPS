@@ -161,6 +161,9 @@ MonoBehaviour:
   pickUpEffect: {fileID: 3793393169309718058, guid: 11b5f10b9a38e3d4584f169f8f36e833, type: 3}
   gunIndexToMakeAvailable: 3
   gunIndexToUpgradeFrom: 1
+  PreviousGunsName:
+  - ElectroGun
+  NewGunName: UpgradedElectroGun
 --- !u!1 &4939666268724384240
 GameObject:
   m_ObjectHideFlags: 0

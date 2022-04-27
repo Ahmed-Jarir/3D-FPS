@@ -79,6 +79,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickUpEffect: {fileID: 3793393169309718058, guid: 11b5f10b9a38e3d4584f169f8f36e833, type: 3}
   gunIndexToMakeAvailable: 2
+  GunName: Shotgun
 --- !u!54 &814252414516191949
 Rigidbody:
   m_ObjectHideFlags: 0

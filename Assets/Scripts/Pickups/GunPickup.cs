@@ -11,6 +11,8 @@ public class GunPickup : Pickup
     [Tooltip("The index of the gun to make available in the shooter script")]
     
     public int gunIndexToMakeAvailable = 0;
+
+    public string GunName;
     
     /// <summary>
     /// Description:
@@ -27,6 +29,10 @@ public class GunPickup : Pickup
         if (collision.tag == "Player" && shooter != null && !shooter.guns[gunIndexToMakeAvailable].upgraded)
         {
             shooter.MakeGunAvailable(gunIndexToMakeAvailable);
+            if (GunName != null)
+            {
+                PlayerPrefs.SetInt(GunName, 1);
+            }
         }
         base.DoOnPickup(collision);
     }

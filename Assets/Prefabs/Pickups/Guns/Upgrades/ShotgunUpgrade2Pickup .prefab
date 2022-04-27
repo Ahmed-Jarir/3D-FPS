@@ -4983,6 +4983,10 @@ MonoBehaviour:
   pickUpEffect: {fileID: 3793393169309718058, guid: 11b5f10b9a38e3d4584f169f8f36e833, type: 3}
   gunIndexToMakeAvailable: 5
   gunIndexToUpgradeFrom: 4
+  PreviousGunsName:
+  - Shotgun
+  - UpgradedShotgun1
+  NewGunName: UpgradedShotgun2
 --- !u!1001 &1397798291638366355
 PrefabInstance:
   m_ObjectHideFlags: 0

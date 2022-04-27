@@ -12,8 +12,9 @@ public class GunUpgradePickup : Pickup
     public int gunIndexToMakeAvailable = 0;
 
     public int gunIndexToUpgradeFrom = 0;
-    
-    
+
+    public List<string> PreviousGunsName;
+    public string NewGunName;
 
     /// <summary>
     /// Description:
@@ -32,6 +33,15 @@ public class GunUpgradePickup : Pickup
             shooter.MakeGunAvailable(gunIndexToMakeAvailable);
             shooter.MakeGunUnavailable(gunIndexToUpgradeFrom);
             shooter.guns[gunIndexToUpgradeFrom].upgraded = true;
+            if (NewGunName != null && PreviousGunsName != null)
+            {
+                PlayerPrefs.SetInt(NewGunName, 1);
+                foreach (string gun in PreviousGunsName)
+                {
+                    PlayerPrefs.SetInt(gun, 2);
+                }
+            }
+
             base.DoOnPickup(collision);
         }
     }

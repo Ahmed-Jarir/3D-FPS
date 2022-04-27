@@ -63,6 +63,7 @@
      <Compile Include="Assets\Scripts\Pickups\ExtraLifePickup.cs" />
      <Compile Include="Assets\Scripts\Enemies\Enemy.cs" />
      <Compile Include="Assets\Scripts\UI\UIelement\HealthDisplay.cs" />
+     <Compile Include="Assets\Scripts\Utility\DisableOnTrigger.cs" />
      <Compile Include="Assets\Scripts\Keys&amp;Doors\KeyRing.cs" />
      <Compile Include="Assets\Scripts\Pickups\Pickup.cs" />
      <Compile Include="Assets\Scripts\Utility\EnemyGibletSpawner.cs" />
@@ -83,6 +84,7 @@
      <Compile Include="Assets\Scripts\Shooter\AmmoTracker.cs" />
      <Compile Include="Assets\Scripts\Enemies\TurretEnemy.cs" />
      <Compile Include="Assets\Scripts\Utility\ScaleOverTime.cs" />
+     <Compile Include="Assets\Scripts\Utility\EnableOnTrigger.cs" />
      <Compile Include="Assets\Scripts\Health&amp;Damage\Damage.cs" />
      <Compile Include="Assets\Scripts\Health&amp;Damage\Destructable.cs" />
      <Compile Include="Assets\Scripts\Utility\GameManager.cs" />

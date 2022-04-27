@@ -20,8 +20,12 @@ public class Sensitivity : MonoBehaviour
             PlayerPrefs.SetFloat("sensitivity",15);
         }
         sensitivity = PlayerPrefs.GetFloat("sensitivity");
-        playercontroller = player.GetComponent<PlayerController>();
-        cameracontroller = cam.GetComponent<CameraController>();
+        
+        if(player != null && cam != null)
+        {
+            playercontroller = player.GetComponent<PlayerController>();
+            cameracontroller = cam.GetComponent<CameraController>();
+        }
     }
 
     void Start()

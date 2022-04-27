@@ -6,13 +6,15 @@ using UnityEngine.UIElements;
 public class Teleporter : MonoBehaviour
 {
     public GameObject player;
-    public Transform TeleportTo;
+    public List<Transform> TeleportToPositions;
+    public bool Locked = true;
 
     public void OnTriggerEnter(Collider collision)
     {
-        if(collision.tag == "Player"){
-            player.GetComponent<CharacterController>().Move(TeleportTo.position - player.transform.position);
+        if(collision.tag == "Player" && !Locked){
+            foreach(Transform TeleportTo in TeleportToPositions) {
+                player.GetComponent<CharacterController>().Move(TeleportTo.position - player.transform.position);
+            }
         }
-        Debug.Log(collision.tag + "\n" + player.transform.position);
     }
 }

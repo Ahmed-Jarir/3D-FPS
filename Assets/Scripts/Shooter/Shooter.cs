@@ -19,6 +19,9 @@ public class Shooter : MonoBehaviour
     [Tooltip("Whether or not this shooter is controlled by the player")]
     public bool isPlayerControlled = false;
 
+    public List<string> GunNames = new List<string>
+        {"Pistol", "ElectroGun", "Shotgun", "UpgradedElectroGun", "UpgradedShotgun1", "UpgradedShotgun2"};
+
     /// <summary>
     /// Description:
     /// Standard Unity function called once before the first update
@@ -29,6 +32,23 @@ public class Shooter : MonoBehaviour
     /// </summary>
     void Start()
     {
+        if(isPlayerControlled)
+        {
+            for (int index = 0; index < GunNames.Count; index++)
+            {
+                if (PlayerPrefs.GetInt(GunNames[index]) == 1)
+                {
+                    guns[index].available = true;
+                }
+
+                else if (PlayerPrefs.GetInt(GunNames[index]) == 2)
+                {
+                    guns[index].available = false;
+                    guns[index].upgraded = true;
+                }
+            }
+        }
+
         SetUpInput();
         SetUpGuns();
     }
