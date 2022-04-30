@@ -45,9 +45,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   teamId: -1
-  defaultHealth: 1
-  maximumHealth: 1
-  currentHealth: 1
+  defaultHealth: 3
+  maximumHealth: 3
+  currentHealth: 3
   invincibilityTime: 3
   isAlwaysInvincible: 1
   useLives: 0
@@ -60,20 +60,9 @@ MonoBehaviour:
   eventsOnDeath:
     m_PersistentCalls:
       m_Calls: []
---- !u!64 &3889783144451638765
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5105573719617101049}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 3893893225453408234, guid: 829ba86389b3d6b408deeb1b85c75036, type: 3}
+  eventsOnRespawn:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &3889783144451638768
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -81,6 +70,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3889783144484699554}
     m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 829ba86389b3d6b408deeb1b85c75036, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 829ba86389b3d6b408deeb1b85c75036, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -94,6 +87,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 829ba86389b3d6b408deeb1b85c75036, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 829ba86389b3d6b408deeb1b85c75036, type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
@@ -104,14 +101,6 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 829ba86389b3d6b408deeb1b85c75036, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 829ba86389b3d6b408deeb1b85c75036, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 829ba86389b3d6b408deeb1b85c75036, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 829ba86389b3d6b408deeb1b85c75036, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -145,3 +134,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 829ba86389b3d6b408deeb1b85c75036, type: 3}
   m_PrefabInstance: {fileID: 3889783144451638768}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &3889783144451638765
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5105573719617101049}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3893893225453408234, guid: 829ba86389b3d6b408deeb1b85c75036, type: 3}

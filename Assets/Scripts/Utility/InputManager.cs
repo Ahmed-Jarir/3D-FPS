@@ -110,6 +110,19 @@ public class InputManager : MonoBehaviour
         yield return new WaitForEndOfFrame();
         firePressed = false;
     }
+    public bool ultIsPressed = false;
+
+    public void ReadUltInput(InputAction.CallbackContext context)
+    {
+        ultIsPressed = !context.canceled;
+        
+        StartCoroutine("ResetUltStart");
+    }
+    private IEnumerator ResetUltStart()
+    {
+        yield return new WaitForEndOfFrame();
+        ultIsPressed = false;
+    }
 
     [Header("Player Jump Input")]
     [Tooltip("Whether or not the jump button was pressed this fame")]

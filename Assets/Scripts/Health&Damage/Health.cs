@@ -90,6 +90,10 @@ public class Health : MonoBehaviour
     // Whether or not the health is invincible
     private bool isInvincableFromDamage = false;
 
+    public bool getisInvincible()
+    {
+        return isInvincableFromDamage;
+    }
     /// <summary>
     /// Description:
     /// Checks against the current time and the time when the health can be damaged again.

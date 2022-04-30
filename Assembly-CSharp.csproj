@@ -116,6 +116,12 @@
      <Compile Include="Assets\Scripts\Enemies\AIUtility\TurnArounder.cs" />
      <Compile Include="Assets\Scripts\UI\CursorChanger.cs" />
      <Compile Include="Assets\Scripts\Keys&amp;Doors\Door.cs" />
+     <Compile Include="Assets\Scripts\Enemies\RageMode.cs" />
+     <Compile Include="Assets\Scripts\Health&amp;Damage\HealthBar.cs" />
+     <Compile Include="Assets\Scripts\Health&amp;Damage\EnemiesHealthbar.cs" />
+     <Compile Include="Assets\Scripts\UI\UIelement\UltimateAbility.cs" />
+     <Compile Include="Assets\Scripts\Pickups\TimeDestructablePickups.cs" />
+     <Compile Include="Assets\Scripts\Enemies\AddUltBonus.cs" />
      <None Include="Assets\Art\UI\Font Source.txt" />
  <Reference Include="UnityEngine">
  <HintPath>/home/ahmed/Unity/Hub/Editor/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -786,6 +792,10 @@
     <ProjectReference Include="Unity.SysrootPackage.Editor.csproj">
       <Project>{7f1f5628-c77b-0992-6186-e0a0d43b8e8c}</Project>
       <Name>Unity.SysrootPackage.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Sprite.Editor.csproj">
+      <Project>{d4e7467c-fc20-292b-be6c-f4fde3f19281}</Project>
+      <Name>Unity.2D.Sprite.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

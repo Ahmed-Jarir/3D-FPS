@@ -5,7 +5,7 @@ using UnityEngine;
 /// <summary>
 /// Pickup-derived class which grants ammo to the player that picks it up.
 /// </summary>
-public class AmmoPickup : Pickup
+public class AmmoPickup : TimeDestructablePickups
 {
     [Tooltip("The ID of the ammunition to be added.")]
     public int ammunitionID = 0;

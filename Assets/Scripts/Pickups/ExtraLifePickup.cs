@@ -5,7 +5,7 @@ using UnityEngine;
 /// <summary>
 /// This class inherits from the Pickup class and will give the player extra lives when picked up
 /// </summary>
-public class ExtraLifePickup : Pickup
+public class ExtraLifePickup : TimeDestructablePickups
 {
     [Header("Extra Life Settings")]
     [Tooltip("How many Lives to give")]

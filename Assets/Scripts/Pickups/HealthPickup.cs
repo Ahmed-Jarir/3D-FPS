@@ -5,7 +5,7 @@ using UnityEngine;
 /// <summary>
 /// This class inherits from the Pickup class and will heal the player when picked up
 /// </summary>
-public class HealthPickup : Pickup
+public class HealthPickup : TimeDestructablePickups 
 {
     [Header("Healing Settings")]
     [Tooltip("The healing to apply")]

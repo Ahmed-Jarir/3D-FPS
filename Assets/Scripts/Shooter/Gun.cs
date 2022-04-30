@@ -35,9 +35,12 @@ public class Gun : MonoBehaviour
     public float fireDelay = 0.02f;
     [Tooltip("The fire type of the weapon")]
     public FireType fireType = FireType.semiAutomatic;
+    public FireType defaultfireType = FireType.semiAutomatic;
     
     // enum for setting the fire type
     public enum FireType { semiAutomatic, automatic };
+    
+    public enum defaultFireType { semiAutomatic, automatic };
 
     // The time when this gun will be able to fire again
     private float ableToFireAgainTime = 0;
@@ -65,6 +68,8 @@ public class Gun : MonoBehaviour
     [Header("Ammo Settings")]
     [Tooltip("Whether this gun requires ammunition.")]
     public bool useAmmo = false;
+
+    public bool defaultUseAmmo = false;
     [Tooltip("The ID of ammo that can be used with this gun.")]
     public int ammunitionID = 0;
     [Tooltip("Whether this gun must be reloaded.")]

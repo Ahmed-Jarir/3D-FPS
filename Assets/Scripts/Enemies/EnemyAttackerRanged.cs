@@ -8,7 +8,7 @@ using UnityEngine;
 public class EnemyAttackerRanged : EnemyAttacker
 {
     [Tooltip("The shooter component that this enemy will use to shoot")]
-    public Shooter shooter = null;
+    public List<Shooter> shooters = null;
 
     /// <summary>
     /// Description:
@@ -21,7 +21,7 @@ public class EnemyAttackerRanged : EnemyAttacker
     /// <returns></returns>
     protected override bool AttackPossible()
     {
-        return base.AttackPossible() && shooter != null;
+        return base.AttackPossible() && shooters != null;
     }
 
     /// <summary>
@@ -36,7 +36,11 @@ public class EnemyAttackerRanged : EnemyAttacker
     protected override IEnumerator PerformAttack()
     {
         OnAttackStart();
-        shooter.FireEquippedGun();
+        foreach (Shooter shooter in shooters)
+        {
+            shooter.FireEquippedGun();
+        }
+
         float t = 0;
         while (t < attackDuration)
         {

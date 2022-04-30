@@ -3969,11 +3969,11 @@ RectTransform:
   m_Father: {fileID: 246291704}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -181.4, y: -65.6}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 16.72638, y: 32}
   m_SizeDelta: {x: 213.74725, y: 65.83157}
-  m_Pivot: {x: 0.5, y: 1}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1702507505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4007,9 +4007,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Created By : Ahmed Jareer
-
-    With Assets from MSU'
+  m_Text: "kill the insects, and retrieve your \nstolen weapons from them  while\nmaking
+    your way to their hive to \nface off the final boss.\n\ncontrolls:\nwasd to move
+    and F for special\nAbility when it's available\n\nCreated By : Ahmed Jareer\nWith
+    Assets from MSU"
 --- !u!222 &1702507506
 CanvasRenderer:
   m_ObjectHideFlags: 0

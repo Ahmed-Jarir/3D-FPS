@@ -20,7 +20,7 @@ public class Shooter : MonoBehaviour
     public bool isPlayerControlled = false;
 
     public List<string> GunNames = new List<string>
-        {"Pistol", "ElectroGun", "Shotgun", "UpgradedElectroGun", "UpgradedShotgun1", "UpgradedShotgun2"};
+        {"Pistol", "PistolUpgrade", "ElectroGun", "Shotgun", "UpgradedElectroGun", "UpgradedShotgun1", "UpgradedShotgun2"};
 
     /// <summary>
     /// Description:

@@ -2823,9 +2823,18 @@ MonoBehaviour:
   maximumToFire: 1
   maximumSpreadDegree: 0
   available: 1
+  upgraded: 0
   gunAnimator: {fileID: 4383198544645381633}
   shootTriggerName: Shoot
   idleAnimationName: Idle
+  useAmmo: 0
+  ammunitionID: 0
+  mustReload: 0
+  magazineSize: 1
+  roundsLoaded: 0
+  reloadTime: 1
+  weaponImage: {fileID: 0}
+  ammoImage: {fileID: 0}
 --- !u!1 &5770274253116985568
 GameObject:
   m_ObjectHideFlags: 0
