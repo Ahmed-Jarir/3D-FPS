@@ -37,6 +37,8 @@ public class Health : MonoBehaviour
     [Tooltip("The amount of time to wait before respawning")]
     public float respawnWaitTime = 3f;
 
+    private bool effectTriggered = false;
+
     /// <summary>
     /// Description:
     /// Standard Unity function called once before the first Update call
@@ -275,45 +277,65 @@ public class Health : MonoBehaviour
     /// </summary>
     void Die()
     {
-        if (deathEffect != null)
+        if (!effectTriggered)
         {
-            if (ragdollHandler != null)
-            {
-                ragdollHandler.EnableRagdoll();
-            }
+            effectTriggered = true;
             if (deathEffect != null)
             {
-                Instantiate(deathEffect, transform.position, transform.rotation, null);
-            }
-        }
-
-        // Do on death events
-        if (eventsOnDeath != null)
-        {
-            eventsOnDeath.Invoke();
-        }
-
-        if (useLives)
-        {
-            currentLives -= 1;
-            if (currentLives > 0)
-            {
-                if (respawnWaitTime == 0)
+                if (ragdollHandler != null)
                 {
-                    Respawn();
+                    ragdollHandler.EnableRagdoll();
+                }
+
+                if (deathEffect != null)
+                {
+                    Instantiate(deathEffect, transform.position, transform.rotation, null);
+                }
+            }
+
+            // Do on death events
+            if (eventsOnDeath != null)
+            {
+                eventsOnDeath.Invoke();
+            }
+
+            if (useLives)
+            {
+                currentLives -= 1;
+                if (currentLives > 0)
+                {
+                    if (respawnWaitTime == 0)
+                    {
+                        Respawn();
+                    }
+                    else
+                    {
+                        respawnTime = Time.time + respawnWaitTime;
+                    }
                 }
                 else
                 {
-                    respawnTime = Time.time + respawnWaitTime;
-                } 
+                    if (respawnWaitTime != 0)
+                    {
+                        respawnTime = Time.time + respawnWaitTime;
+                    }
+                    else if (ragdollHandler != null)
+                    {
+                        ragdollHandler.EnableRagdoll();
+                    }
+                    else
+                    {
+                        Destructable.DoDestroy(this.gameObject);
+                    }
+
+                    GameOver();
+                }
+
             }
             else
             {
-                if (respawnWaitTime != 0)
-                {
-                    respawnTime = Time.time + respawnWaitTime;
-                }
-                else if (ragdollHandler != null)
+                GameOver();
+                if (ragdollHandler != null)
                 {
                     ragdollHandler.EnableRagdoll();
                 }
@@ -321,22 +343,8 @@ public class Health : MonoBehaviour
                 {
                     Destructable.DoDestroy(this.gameObject);
                 }
-                GameOver();
             }
-            
         }
-        else
-        {
-            GameOver();
-            if (ragdollHandler != null)
-            {
-                ragdollHandler.EnableRagdoll();
-            }
-            else
-            {
-                Destructable.DoDestroy(this.gameObject);
-            }
-        }      
     }
 
     /// <summary>

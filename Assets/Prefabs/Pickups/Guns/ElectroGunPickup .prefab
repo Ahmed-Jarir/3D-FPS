@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 4605374399130771765}
   - component: {fileID: 5229708420030027267}
   - component: {fileID: 5229708420030027268}
+  - component: {fileID: -6500881138870826536}
   m_Layer: 0
   m_Name: 'ElectroGunPickup '
   m_TagString: Untagged
@@ -79,7 +80,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 693d3a79e88720a4890088598d760b71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpEffect: {fileID: 3793393169309718058, guid: 11b5f10b9a38e3d4584f169f8f36e833, type: 3}
+  pickUpEffect: {fileID: 0}
   gunIndexToMakeAvailable: 1
   GunName: ElectroGun
 --- !u!54 &4605374399130771764
@@ -160,6 +161,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4605374399130771770}
   m_Mesh: {fileID: 5886130406510243564, guid: 2f0209f961f8c5d449e0ab5016e105db, type: 3}
+--- !u!114 &-6500881138870826536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4605374399130771770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b877431a1f749074ba3bcac17717f7ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickUpEffect: {fileID: 3793393169309718058, guid: 11b5f10b9a38e3d4584f169f8f36e833, type: 3}
+  timeUntilDestruction: 1e+29
+  ammunitionID: 1
+  amount: 100
 --- !u!1 &6609747702040158249
 GameObject:
   m_ObjectHideFlags: 0

@@ -4500,7 +4500,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7082170386358399953, guid: 321d94a164b2dc249a76a1b523b66cfd, type: 3}
       propertyPath: nameOfSceneToLoad
-      value: Level2
+      value: MiniLevel1
       objectReference: {fileID: 0}
     - target: {fileID: 7082170386944587704, guid: 321d94a164b2dc249a76a1b523b66cfd, type: 3}
       propertyPath: m_RootOrder

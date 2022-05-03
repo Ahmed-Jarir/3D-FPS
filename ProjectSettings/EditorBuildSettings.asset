@@ -12,7 +12,19 @@ EditorBuildSettings:
     path: Assets/_Scenes/Level1.unity
     guid: b42bfc5876c35e6879a57ee24c7292bc
   - enabled: 1
-    path: Assets/_Scenes/Level2.unity
+    path: Assets/_Scenes/MiniLevel1.unity
+    guid: d4ad4c692455f00cfafa09202920a588
+  - enabled: 1
+    path: Assets/_Scenes/MiniLevel2.unity
+    guid: 47c4f69bfd4370899afcf47884e27b8f
+  - enabled: 1
+    path: Assets/_Scenes/MiniLevel3.unity
+    guid: 6e6613659ce539b348931d92ced7cbbf
+  - enabled: 1
+    path: Assets/_Scenes/MiniLevel4.unity
+    guid: 152efe575a50079bc8d938f106818698
+  - enabled: 1
+    path: Assets/_Scenes/BossFight.unity
     guid: 5b067a717f00b8ccca70dfd6f1a51201
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: d209a7dd0a5b5f04bb9b362489c288b9, type: 2}

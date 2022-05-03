@@ -53,6 +53,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Health&amp;Damage\RagdollHandler.cs" />
+     <Compile Include="Assets\Scripts\Enemies\AddUltBonus.cs" />
      <Compile Include="Assets\Scripts\Enemies\EnemyAttackerMelee.cs" />
      <Compile Include="Assets\Scripts\Shooter\Shooter.cs" />
      <Compile Include="Assets\Scripts\Enemies\EnemyAttacker.cs" />
@@ -74,6 +75,7 @@
      <Compile Include="Assets\Scripts\Pickups\GunPickup.cs" />
      <Compile Include="Assets\Scripts\Utility\RandomGameObjectSpawner.cs" />
      <Compile Include="Assets\Scripts\Shooter\GunSmokeHandler.cs" />
+     <Compile Include="Assets\Scripts\UI\UIelement\UltimateAbility.cs" />
      <Compile Include="Assets\Scripts\Pickups\KeyPickup.cs" />
      <Compile Include="Assets\Scripts\Projectile\Projectile.cs" />
      <Compile Include="Assets\Scripts\Enemies\Hive\Hive.cs" />
@@ -83,6 +85,7 @@
      <Compile Include="Assets\Scripts\Enemies\EnemyAttackerRanged.cs" />
      <Compile Include="Assets\Scripts\Shooter\AmmoTracker.cs" />
      <Compile Include="Assets\Scripts\Enemies\TurretEnemy.cs" />
+     <Compile Include="Assets\Scripts\Enemies\RageMode.cs" />
      <Compile Include="Assets\Scripts\Utility\ScaleOverTime.cs" />
      <Compile Include="Assets\Scripts\Utility\EnableOnTrigger.cs" />
      <Compile Include="Assets\Scripts\Health&amp;Damage\Damage.cs" />
@@ -90,6 +93,7 @@
      <Compile Include="Assets\Scripts\Utility\GameManager.cs" />
      <Compile Include="Assets\Scripts\UI\LevelLoadButton.cs" />
      <Compile Include="Assets\Scripts\Utility\OnDestroyEffectCreator.cs" />
+     <Compile Include="Assets\Scripts\Health&amp;Damage\EnemiesHealthbar.cs" />
      <Compile Include="Assets\Scripts\Utility\CursorManager.cs" />
      <Compile Include="Assets\Scripts\UI\UIelement\WeaponDisplay.cs" />
      <Compile Include="Assets\Scripts\Pickups\HealthPickup.cs" />
@@ -98,6 +102,7 @@
      <Compile Include="Assets\Scripts\UI\UIelement\UIelement.cs" />
      <Compile Include="Assets\Scripts\UI\UIelement\LivesDisplay.cs" />
      <Compile Include="Assets\Scripts\Pickups\PickupAnimation.cs" />
+     <Compile Include="Assets\Scripts\Health&amp;Damage\HealthBar.cs" />
      <Compile Include="Assets\Scripts\Health&amp;Damage\Health.cs" />
      <Compile Include="Assets\Scripts\UI\UIelement\ScoreDisplay.cs" />
      <Compile Include="Assets\Scripts\Enemies\Hive\HiveAttack.cs" />
@@ -109,6 +114,7 @@
      <Compile Include="Assets\Scripts\Utility\InputManager.cs" />
      <Compile Include="Assets\Scripts\UI\HighlightFix.cs" />
      <Compile Include="Assets\Scripts\UI\Sensitivity.cs" />
+     <Compile Include="Assets\Scripts\Pickups\TimeDestructablePickups.cs" />
      <Compile Include="Assets\Scripts\Controller\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Enemies\EnemySpawner.cs" />
      <Compile Include="Assets\Scripts\Controller\CameraController.cs" />
@@ -116,12 +122,6 @@
      <Compile Include="Assets\Scripts\Enemies\AIUtility\TurnArounder.cs" />
      <Compile Include="Assets\Scripts\UI\CursorChanger.cs" />
      <Compile Include="Assets\Scripts\Keys&amp;Doors\Door.cs" />
-     <Compile Include="Assets\Scripts\Enemies\RageMode.cs" />
-     <Compile Include="Assets\Scripts\Health&amp;Damage\HealthBar.cs" />
-     <Compile Include="Assets\Scripts\Health&amp;Damage\EnemiesHealthbar.cs" />
-     <Compile Include="Assets\Scripts\UI\UIelement\UltimateAbility.cs" />
-     <Compile Include="Assets\Scripts\Pickups\TimeDestructablePickups.cs" />
-     <Compile Include="Assets\Scripts\Enemies\AddUltBonus.cs" />
      <None Include="Assets\Art\UI\Font Source.txt" />
  <Reference Include="UnityEngine">
  <HintPath>/home/ahmed/Unity/Hub/Editor/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -725,6 +725,10 @@
       <Project>{37d5d151-7d7f-a61e-c497-53f940604b50}</Project>
       <Name>Unity.Searcher.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.2D.Sprite.Editor.csproj">
+      <Project>{d4e7467c-fc20-292b-be6c-f4fde3f19281}</Project>
+      <Name>Unity.2D.Sprite.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.RenderPipelines.Core.Runtime.csproj">
       <Project>{ccfb936a-20e8-2e1a-34a7-2b5d21b3bb9a}</Project>
       <Name>Unity.RenderPipelines.Core.Runtime</Name>
@@ -792,10 +796,6 @@
     <ProjectReference Include="Unity.SysrootPackage.Editor.csproj">
       <Project>{7f1f5628-c77b-0992-6186-e0a0d43b8e8c}</Project>
       <Name>Unity.SysrootPackage.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Sprite.Editor.csproj">
-      <Project>{d4e7467c-fc20-292b-be6c-f4fde3f19281}</Project>
-      <Name>Unity.2D.Sprite.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

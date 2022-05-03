@@ -4888,6 +4888,7 @@ GameObject:
   - component: {fileID: 1397798291824025757}
   - component: {fileID: 1397798291824025758}
   - component: {fileID: 1397798291824025759}
+  - component: {fileID: 3999636041332918800}
   m_Layer: 0
   m_Name: 'ShotgunUpgrade2Pickup '
   m_TagString: Untagged
@@ -4980,13 +4981,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18de453863254dcab0c38a913ed33e39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpEffect: {fileID: 3793393169309718058, guid: 11b5f10b9a38e3d4584f169f8f36e833, type: 3}
+  pickUpEffect: {fileID: 0}
   gunIndexToMakeAvailable: 5
   gunIndexToUpgradeFrom: 4
   PreviousGunsName:
   - Shotgun
   - UpgradedShotgun1
   NewGunName: UpgradedShotgun2
+--- !u!114 &3999636041332918800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1397798291824025761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b877431a1f749074ba3bcac17717f7ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickUpEffect: {fileID: 3793393169309718058, guid: 11b5f10b9a38e3d4584f169f8f36e833, type: 3}
+  timeUntilDestruction: 1e+29
+  ammunitionID: 2
+  amount: 100
 --- !u!1001 &1397798291638366355
 PrefabInstance:
   m_ObjectHideFlags: 0

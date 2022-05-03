@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 814252414516191936}
   - component: {fileID: 814252414516191949}
   - component: {fileID: 814252414516191948}
+  - component: {fileID: 7193681904885076381}
   m_Layer: 0
   m_Name: ShotgunPickup
   m_TagString: Untagged
@@ -77,7 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 693d3a79e88720a4890088598d760b71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpEffect: {fileID: 3793393169309718058, guid: 11b5f10b9a38e3d4584f169f8f36e833, type: 3}
+  pickUpEffect: {fileID: 0}
   gunIndexToMakeAvailable: 2
   GunName: Shotgun
 --- !u!54 &814252414516191949
@@ -109,6 +110,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2, y: 2.5102224, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7193681904885076381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814252414516191939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b877431a1f749074ba3bcac17717f7ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickUpEffect: {fileID: 3793393169309718058, guid: 11b5f10b9a38e3d4584f169f8f36e833, type: 3}
+  timeUntilDestruction: 1e+29
+  ammunitionID: 2
+  amount: 100
 --- !u!1001 &814252414116953775
 PrefabInstance:
   m_ObjectHideFlags: 0

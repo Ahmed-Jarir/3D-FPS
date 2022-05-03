@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 56024868010895579}
   - component: {fileID: 56024868010895397}
   - component: {fileID: 4113306494120034445}
+  - component: {fileID: -106452495905191982}
   m_Layer: 0
   m_Name: ElectroGunUpgradePickup
   m_TagString: Untagged
@@ -158,12 +159,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18de453863254dcab0c38a913ed33e39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpEffect: {fileID: 3793393169309718058, guid: 11b5f10b9a38e3d4584f169f8f36e833, type: 3}
+  pickUpEffect: {fileID: 0}
   gunIndexToMakeAvailable: 3
   gunIndexToUpgradeFrom: 1
   PreviousGunsName:
   - ElectroGun
   NewGunName: UpgradedElectroGun
+--- !u!114 &-106452495905191982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56024868010895398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b877431a1f749074ba3bcac17717f7ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickUpEffect: {fileID: 3793393169309718058, guid: 11b5f10b9a38e3d4584f169f8f36e833, type: 3}
+  timeUntilDestruction: 1e+29
+  ammunitionID: 1
+  amount: 100
 --- !u!1 &4939666268724384240
 GameObject:
   m_ObjectHideFlags: 0

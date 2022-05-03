@@ -8,6 +8,8 @@ public class RageMode : MonoBehaviour
 {
     public Health BossHealth;
     public List<GameObject> ItemsToMakeAvailable;
+    public List<GameObject> ItemsToDisable;
+    public EnemyAttackerRanged ScriptToAddShooters;
     public GameObject SpawnersToIncreaseTheRateOf;
     public int spawnersNewRate = 20;
     public GameObject rageEffect = null;
@@ -50,7 +52,7 @@ public class RageMode : MonoBehaviour
 
         if (TimeToResetInvincibilityTime <= Time.time && triggerable)
         {
-            BossHealth.invincibilityTime = 0;
+            BossHealth.invincibilityTime = 0.05f;
             triggerable = false;
         }
     }
@@ -66,13 +68,17 @@ public class RageMode : MonoBehaviour
         {
             script.spawnRate = spawnersNewRate;
         }
-
-        foreach (GameObject item in ItemsToMakeAvailable)
+        foreach (GameObject item in ItemsToDisable)
         {
-            item.SetActive(true);
+           item.SetActive(false); 
         }
         TimeToResetInvincibilityTime = Time.time + 10;
         BossHealth.invincibilityTime = 10;
         triggerable = true;
+        foreach (GameObject item in ItemsToMakeAvailable)
+        {
+            ScriptToAddShooters.shooters.Add(item.GetComponent<Shooter>());
+            item.SetActive(true);
+        }
     }
 }

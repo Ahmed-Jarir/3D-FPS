@@ -706,6 +706,10 @@
       <Project>{37d5d151-7d7f-a61e-c497-53f940604b50}</Project>
       <Name>Unity.Searcher.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.2D.Sprite.Editor.csproj">
+      <Project>{d4e7467c-fc20-292b-be6c-f4fde3f19281}</Project>
+      <Name>Unity.2D.Sprite.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.RenderPipelines.Core.Runtime.csproj">
       <Project>{ccfb936a-20e8-2e1a-34a7-2b5d21b3bb9a}</Project>
       <Name>Unity.RenderPipelines.Core.Runtime</Name>
@@ -773,10 +777,6 @@
     <ProjectReference Include="Unity.SysrootPackage.Editor.csproj">
       <Project>{7f1f5628-c77b-0992-6186-e0a0d43b8e8c}</Project>
       <Name>Unity.SysrootPackage.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Sprite.Editor.csproj">
-      <Project>{d4e7467c-fc20-292b-be6c-f4fde3f19281}</Project>
-      <Name>Unity.2D.Sprite.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
