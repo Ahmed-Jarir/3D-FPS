@@ -1249,7 +1249,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 924923336}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &96452905
 MonoBehaviour:
@@ -3339,7 +3339,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 924923336}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &261950536
 MonoBehaviour:
@@ -4295,6 +4295,14 @@ PrefabInstance:
       propertyPath: eventsOnDeath.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5439965121845584856, guid: 5ff7ca7476ea3c041ae632ace7571230, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5439965121845584862, guid: 5ff7ca7476ea3c041ae632ace7571230, type: 3}
+      propertyPath: isPlayerControlled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5439965121845584863, guid: 5ff7ca7476ea3c041ae632ace7571230, type: 3}
       propertyPath: fireType
       value: 0
@@ -4304,13 +4312,17 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5439965121845584863, guid: 5ff7ca7476ea3c041ae632ace7571230, type: 3}
+      propertyPath: alwaysShootAtTarget
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5439965121845584863, guid: 5ff7ca7476ea3c041ae632ace7571230, type: 3}
       propertyPath: maximumSpreadDegree
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5439965121845584863, guid: 5ff7ca7476ea3c041ae632ace7571230, type: 3}
       propertyPath: projectileGameObject
       value: 
-      objectReference: {fileID: 8748350931074695798, guid: 93a9879da58972f6784d1cb718e94755, type: 3}
+      objectReference: {fileID: 8995419335201364665, guid: fc6b6760b8aa00f9fa537a91f5193100, type: 3}
     - target: {fileID: 5439965122366052592, guid: 5ff7ca7476ea3c041ae632ace7571230, type: 3}
       propertyPath: m_Name
       value: Boss (1)

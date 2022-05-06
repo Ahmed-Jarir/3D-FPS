@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -21,6 +22,15 @@ public class Shooter : MonoBehaviour
 
     public List<string> GunNames = new List<string>
         {"Pistol", "PistolUpgrade", "ElectroGun", "Shotgun", "UpgradedElectroGun", "UpgradedShotgun1", "UpgradedShotgun2"};
+
+    //used to reset guns for play testing
+    //private void Awake()
+    //{
+    //    for (int index = 0; index < GunNames.Count; index++)
+    //    {
+    //       PlayerPrefs.SetInt(GunNames[index], 0); 
+    //    }
+    //}
 
     /// <summary>
     /// Description:

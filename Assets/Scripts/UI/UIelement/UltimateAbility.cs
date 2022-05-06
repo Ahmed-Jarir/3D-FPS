@@ -79,8 +79,7 @@ public class UltimateAbility : MonoBehaviour
         wasTriggered = true;
         foreach (Gun gun in PlayersShooter.guns)
         {
-            gun.fireType = Gun.FireType.automatic;
-            gun.useAmmo = false;
+            gun.SetValuesForRageMode(Gun.FireType.automatic, false, 0.2f);
         }
 
         timeToDisableAbility = Time.time + abilityDuration;
@@ -92,8 +91,7 @@ public class UltimateAbility : MonoBehaviour
 
         foreach (Gun gun in PlayersShooter.guns)
         {
-            gun.fireType = gun.defaultfireType;
-            gun.useAmmo = gun.defaultUseAmmo;
+            gun.resetValues();
         }
 
         wasTriggered = false;

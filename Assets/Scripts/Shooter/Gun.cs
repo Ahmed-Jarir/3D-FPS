@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 /// <summary>
 /// This class handles the setup of a gun
@@ -33,14 +35,14 @@ public class Gun : MonoBehaviour
     public Transform fireLocationTransform;
     [Tooltip("How long to wait before being able to fire again, if no animator is set")]
     public float fireDelay = 0.02f;
+
+    private float defaultFireDelay;
     [Tooltip("The fire type of the weapon")]
     public FireType fireType = FireType.semiAutomatic;
-    public FireType defaultfireType = FireType.semiAutomatic;
+    private FireType defaultfireType;
     
     // enum for setting the fire type
     public enum FireType { semiAutomatic, automatic };
-    
-    public enum defaultFireType { semiAutomatic, automatic };
 
     // The time when this gun will be able to fire again
     private float ableToFireAgainTime = 0;
@@ -69,7 +71,7 @@ public class Gun : MonoBehaviour
     [Tooltip("Whether this gun requires ammunition.")]
     public bool useAmmo = false;
 
-    public bool defaultUseAmmo = false;
+    private bool defaultUseAmmo = false;
     [Tooltip("The ID of ammo that can be used with this gun.")]
     public int ammunitionID = 0;
     [Tooltip("Whether this gun must be reloaded.")]
@@ -88,6 +90,28 @@ public class Gun : MonoBehaviour
     [Tooltip("The ammo image to display on the UI")]
     public Sprite ammoImage;
 
+
+    private void Awake()
+    {
+        defaultfireType = this.fireType;
+        defaultUseAmmo = this.useAmmo;
+        defaultFireDelay = this.fireDelay;
+    }
+
+    public void SetValuesForRageMode(FireType fireT, bool UseAmmo, float fireDel)
+    {
+        fireType = fireT;
+        fireDelay = fireDel;
+        useAmmo = UseAmmo;
+    }
+
+    public void resetValues()
+    {
+        fireType = defaultfireType;
+        useAmmo = defaultUseAmmo;
+        fireDelay = defaultFireDelay;
+    }
+
     /// <summary>
     /// Description:
     /// Standard Unity function called before Update
@@ -96,6 +120,7 @@ public class Gun : MonoBehaviour
     /// Return:
     /// void (no return)
     /// </summary>
+    
     private void Start()
     {
         Setup();

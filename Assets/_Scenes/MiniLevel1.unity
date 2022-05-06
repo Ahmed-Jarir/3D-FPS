@@ -4301,11 +4301,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5439965121845584863, guid: 5ff7ca7476ea3c041ae632ace7571230, type: 3}
       propertyPath: maximumToFire
-      value: 20
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5439965121845584863, guid: 5ff7ca7476ea3c041ae632ace7571230, type: 3}
       propertyPath: maximumSpreadDegree
-      value: 2.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5439965121845584863, guid: 5ff7ca7476ea3c041ae632ace7571230, type: 3}
       propertyPath: projectileGameObject
@@ -16122,6 +16122,7 @@ MonoBehaviour:
   - {fileID: 261950534}
   - {fileID: 96452903}
   ItemsToDisable: []
+  ScriptToAddShooters: {fileID: 0}
   SpawnersToIncreaseTheRateOf: {fileID: 2127762428}
   spawnersNewRate: 20
   rageEffect: {fileID: 0}
