@@ -45,7 +45,7 @@ public class RageMode : MonoBehaviour
 
     void Update()
     {
-        if (!Triggered && BossHealth.currentHealth <= (BossHealth.defaultHealth * 0.2))
+        if (!Triggered && BossHealth.currentHealth <= (BossHealth.defaultHealth * 0.1))
         {
           TriggerWhenConditionsAreMet();  
         }

@@ -160,7 +160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pickUpEffect: {fileID: 0}
-  gunIndexToMakeAvailable: 3
+  gunIndexToMakeAvailable: 4
   gunIndexToUpgradeFrom: 1
   PreviousGunsName:
   - ElectroGun

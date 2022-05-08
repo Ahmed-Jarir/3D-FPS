@@ -17,11 +17,11 @@ public class Health : MonoBehaviour
 
     [Header("Health Settings")]
     [Tooltip("The default health value")]
-    public int defaultHealth = 1;
+    public int defaultHealth = 25;
     [Tooltip("The maximum health value")]
-    public int maximumHealth = 1;
+    public int maximumHealth = 25;
     [Tooltip("The current in game health value")]
-    public int currentHealth = 1;
+    public int currentHealth = 25;
     [Tooltip("Invulnerability duration, in seconds, after taking damage")]
     public float invincibilityTime = 3f;
     [Tooltip("Whether or not this health is always invincible")]
@@ -139,6 +139,10 @@ public class Health : MonoBehaviour
     /// </summary>
     void Respawn()
     {
+        if (this.tag == "Player")
+        {
+            effectTriggered = false;
+        }
         if (GetComponent<CharacterController>() != null)
         {
             GetComponent<CharacterController>().enabled = false;

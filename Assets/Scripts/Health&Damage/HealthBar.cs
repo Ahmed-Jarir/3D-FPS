@@ -19,12 +19,12 @@ public class HealthBar : MonoBehaviour
         {
             healthBar.color = Color.blue;
         }
-        else if(healthBar.fillAmount< 0.2f)
+        else if(healthBar.fillAmount< 0.1f)
         {
             healthBar.color = Color.red;
         }
 
-        else if(healthBar.fillAmount< 0.4f)
+        else if(healthBar.fillAmount< 0.5f)
         {
             healthBar.color = Color.yellow;
         }

@@ -253,9 +253,15 @@ public class Shooter : MonoBehaviour
                 {
                     gun.gameObject.SetActive(true);
                 }
+                
+                
                 else
                 {
                     gun.gameObject.SetActive(false);
+                }
+                if (!gun.available && guns[equippedGunIndex] == gun)
+                {
+                    equippedGunIndex += 3;
                 }
             }
         }

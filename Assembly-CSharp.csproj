@@ -52,6 +52,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Utility\AnimationWorkAround.cs" />
      <Compile Include="Assets\Scripts\Health&amp;Damage\RagdollHandler.cs" />
      <Compile Include="Assets\Scripts\Enemies\AddUltBonus.cs" />
      <Compile Include="Assets\Scripts\Enemies\EnemyAttackerMelee.cs" />
@@ -123,7 +124,6 @@
      <Compile Include="Assets\Scripts\Enemies\AIUtility\TurnArounder.cs" />
      <Compile Include="Assets\Scripts\UI\CursorChanger.cs" />
      <Compile Include="Assets\Scripts\Keys&amp;Doors\Door.cs" />
-     <Compile Include="Assets\Scripts\Utility\AnimationWorkAround.cs" />
      <None Include="Assets\Art\UI\Font Source.txt" />
  <Reference Include="UnityEngine">
  <HintPath>/home/ahmed/Unity/Hub/Editor/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>

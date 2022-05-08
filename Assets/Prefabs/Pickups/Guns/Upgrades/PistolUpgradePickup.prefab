@@ -4981,7 +4981,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pickUpEffect: {fileID: 3793393169309718058, guid: 11b5f10b9a38e3d4584f169f8f36e833, type: 3}
-  gunIndexToMakeAvailable: 6
+  gunIndexToMakeAvailable: 3
   gunIndexToUpgradeFrom: 0
   PreviousGunsName:
   - Pistol
