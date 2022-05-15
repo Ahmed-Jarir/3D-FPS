@@ -8419,10 +8419,18 @@ PrefabInstance:
       propertyPath: PlayersShooter
       value: 
       objectReference: {fileID: 2044468316}
+    - target: {fileID: 2099571597, guid: cecc84517a32be38ab34539c5ee7fcdd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1061853576750660974, guid: cecc84517a32be38ab34539c5ee7fcdd, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 44883760}
+    - target: {fileID: 2632506824772659334, guid: cecc84517a32be38ab34539c5ee7fcdd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: BossFight
+      objectReference: {fileID: 0}
     - target: {fileID: 3242272571918121373, guid: cecc84517a32be38ab34539c5ee7fcdd, type: 3}
       propertyPath: targetHealth
       value: 
@@ -8503,8 +8511,29 @@ PrefabInstance:
       propertyPath: targetHealth
       value: 
       objectReference: {fileID: 44883764}
+    - target: {fileID: 8767401108172473151, guid: cecc84517a32be38ab34539c5ee7fcdd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cecc84517a32be38ab34539c5ee7fcdd, type: 3}
+--- !u!1 &1872208108 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3332394741711762691, guid: cecc84517a32be38ab34539c5ee7fcdd, type: 3}
+  m_PrefabInstance: {fileID: 1872208107}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1872208109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1872208108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d67d68505df48358a3fffecd488d847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1879200832
 PrefabInstance:
   m_ObjectHideFlags: 0

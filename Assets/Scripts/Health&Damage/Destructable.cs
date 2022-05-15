@@ -13,6 +13,8 @@ public class Destructable : MonoBehaviour
     [Tooltip("An event to call when this object is destroyed")]
     public UnityEvent onDestroyEvent = new UnityEvent();
 
+    private bool triggered = false;
+
     /// <summary>
     /// Description:
     /// Instantiates an effect prefab where this gameobject is, then destroys this gameobject.
@@ -23,8 +25,9 @@ public class Destructable : MonoBehaviour
     /// </summary>
     public void DestroyWithEffect()
     {
-        if (destroyEffect != null)
+        if (destroyEffect != null && !triggered)
         {
+            triggered = true;
             GameObject obj = Instantiate(destroyEffect, transform.position, transform.rotation, null);
         }
         if (onDestroyEvent != null)

@@ -186,10 +186,10 @@ MonoBehaviour:
   - {fileID: 6194793869883049914, guid: 9860b8ea97be43342a8d36e5a268816f, type: 3}
   - {fileID: 6194793869883049914, guid: e37cb3e515f81034485d091d8e4d60f3, type: 3}
   dropPercentages:
-  - 0.1
-  - 0.15
-  - 0.3
-  - 0.02
+  - 0.14
+  - 0.4
+  - 0.45
+  - 0.01
 --- !u!114 &2994036116951472063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,4 +218,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea8626f8a25648c78d0db33f142bcb3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ultScript: {fileID: 0}

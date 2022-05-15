@@ -54,6 +54,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Utility\AnimationWorkAround.cs" />
      <Compile Include="Assets\Scripts\Health&amp;Damage\RagdollHandler.cs" />
+     <Compile Include="Assets\Scripts\UI\Volume.cs" />
      <Compile Include="Assets\Scripts\Enemies\AddUltBonus.cs" />
      <Compile Include="Assets\Scripts\Enemies\EnemyAttackerMelee.cs" />
      <Compile Include="Assets\Scripts\Shooter\Shooter.cs" />
@@ -65,6 +66,7 @@
      <Compile Include="Assets\Scripts\Pickups\ExtraLifePickup.cs" />
      <Compile Include="Assets\Scripts\Enemies\Enemy.cs" />
      <Compile Include="Assets\Scripts\UI\UIelement\HealthDisplay.cs" />
+     <Compile Include="Assets\Scripts\UI\UnlockButton.cs" />
      <Compile Include="Assets\Scripts\Utility\DisableOnTrigger.cs" />
      <Compile Include="Assets\Scripts\Keys&amp;Doors\KeyRing.cs" />
      <Compile Include="Assets\Scripts\Pickups\Pickup.cs" />
@@ -111,6 +113,7 @@
      <Compile Include="Assets\Scripts\UI\UIelement\HighScoreDisplay.cs" />
      <Compile Include="Assets\Scripts\Pickups\AmmoPickup.cs" />
      <Compile Include="Assets\Scripts\Environment\LevelLoadTrigger.cs" />
+     <Compile Include="Assets\Scripts\UI\LevelButtonUnlock.cs" />
      <Compile Include="Assets\Scripts\Enemies\FlyingEnemy.cs" />
      <Compile Include="Assets\Scripts\Environment\Checkpoint.cs" />
      <Compile Include="Assets\Scripts\Utility\InputManager.cs" />

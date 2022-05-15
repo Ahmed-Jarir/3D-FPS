@@ -4983,7 +4983,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickUpEffect: {fileID: 0}
   gunIndexToMakeAvailable: 6
-  gunIndexToUpgradeFrom: 4
+  gunIndexToUpgradeFrom: 5
   PreviousGunsName:
   - Shotgun
   - UpgradedShotgun1

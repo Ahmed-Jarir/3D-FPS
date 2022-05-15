@@ -3556,6 +3556,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 579443979, guid: cecc84517a32be38ab34539c5ee7fcdd, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 643928473, guid: cecc84517a32be38ab34539c5ee7fcdd, type: 3}
       propertyPath: cam
       value: 
@@ -3568,10 +3572,22 @@ PrefabInstance:
       propertyPath: targetHealth
       value: 
       objectReference: {fileID: 1118009242}
+    - target: {fileID: 1626806061, guid: cecc84517a32be38ab34539c5ee7fcdd, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1694218496, guid: cecc84517a32be38ab34539c5ee7fcdd, type: 3}
       propertyPath: PlayersShooter
       value: 
       objectReference: {fileID: 46466040}
+    - target: {fileID: 2099571597, guid: cecc84517a32be38ab34539c5ee7fcdd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 148850900337096099, guid: cecc84517a32be38ab34539c5ee7fcdd, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1061853576750660974, guid: cecc84517a32be38ab34539c5ee7fcdd, type: 3}
       propertyPath: player
       value: 
@@ -3599,6 +3615,10 @@ PrefabInstance:
     - target: {fileID: 2359097433940617164, guid: cecc84517a32be38ab34539c5ee7fcdd, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2632506824772659334, guid: cecc84517a32be38ab34539c5ee7fcdd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: MiniLevel1
       objectReference: {fileID: 0}
     - target: {fileID: 3332394741711762691, guid: cecc84517a32be38ab34539c5ee7fcdd, type: 3}
       propertyPath: m_Name
@@ -3652,6 +3672,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6829383571013908822, guid: cecc84517a32be38ab34539c5ee7fcdd, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8293648246886899743, guid: cecc84517a32be38ab34539c5ee7fcdd, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -3704,8 +3728,29 @@ PrefabInstance:
       propertyPath: targetHealth
       value: 
       objectReference: {fileID: 1602377148}
+    - target: {fileID: 8767401108172473151, guid: cecc84517a32be38ab34539c5ee7fcdd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cecc84517a32be38ab34539c5ee7fcdd, type: 3}
+--- !u!1 &286698270 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3332394741711762691, guid: cecc84517a32be38ab34539c5ee7fcdd, type: 3}
+  m_PrefabInstance: {fileID: 286698269}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &286698271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286698270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d67d68505df48358a3fffecd488d847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &288174673
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4414,6 +4459,17 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 3
+--- !u!114 &315353809 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5439965122366052596, guid: 5ff7ca7476ea3c041ae632ace7571230, type: 3}
+  m_PrefabInstance: {fileID: 315353804}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315353807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f4b2a69561ad7c48946d2999bdc1277, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &324911865
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16179,7 +16235,7 @@ MonoBehaviour:
   - {fileID: 261950534}
   - {fileID: 96452903}
   ItemsToDisable: []
-  ScriptToAddShooters: {fileID: 0}
+  ScriptToAddShooters: {fileID: 315353809}
   SpawnersToIncreaseTheRateOf: {fileID: 2127762428}
   spawnersNewRate: 20
   rageEffect: {fileID: 0}
